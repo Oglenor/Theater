@@ -46,21 +46,21 @@ public class SpectatorStructureTest {
 
     @Test @DisabledIf(notApplicable) @Order(3_01)
     public void methodBookAnySeat() {
-        it.hasMethod("bookAnySeat", withParams("ts: theater.TheaterSeating"))
+        it.hasMethod("bookAnySeat", withParams("ts: theater.seating.TheaterSeating"))
             .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
             .thatReturnsNothing();
     }
 
     @Test @DisabledIf(notApplicable) @Order(3_02)
     public void methodBookSpecificSeat() {
-        it.hasMethod("bookSpecificSeat", withParams("ts: theater.TheaterSeating", "row: int", "col: int"))
+        it.hasMethod("bookSpecificSeat", withParams("ts: theater.seating.TheaterSeating", "row: int", "col: int"))
             .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
             .thatReturnsNothing();
     }
 
     @Test @DisabledIf(notApplicable) @Order(3_03)
     public void methodBookTailoredSeat() {
-        it.hasMethod("bookTailoredSeat", withParams("ts: theater.TheaterSeating"))
+        it.hasMethod("bookTailoredSeat", withParams("ts: theater.seating.TheaterSeating"))
             .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
             .thatReturnsNothing();
     }

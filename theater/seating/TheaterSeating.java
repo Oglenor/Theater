@@ -1,4 +1,4 @@
-package Theater;
+package theater.seating;
 
 import java.util.ArrayList;
 import java.util.HashMap;

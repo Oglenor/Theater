@@ -5,10 +5,6 @@ import org.junit.jupiter.api.condition.*;
 import org.junit.jupiter.api.MethodOrderer.*;
 import check.*;
 
-import theater.TheaterSeating;
-import theater.seating.Seat;
-import theater.seating.SeatType;
-
 @TestMethodOrder(OrderAnnotation.class)
 public class SpectatorTestStructureTest {
     @BeforeAll

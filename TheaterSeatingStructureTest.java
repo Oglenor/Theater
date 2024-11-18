@@ -5,15 +5,11 @@ import org.junit.jupiter.api.condition.*;
 import org.junit.jupiter.api.MethodOrderer.*;
 import check.*;
 
-import theater.TheaterSeating;
-import theater.seating.Seat;
-import theater.seating.SeatType;
-
 @TestMethodOrder(OrderAnnotation.class)
 public class TheaterSeatingStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("theater.TheaterSeating")
+        CheckThat.theClass("theater.seating.TheaterSeating")
                  .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
