@@ -14,6 +14,8 @@ public class Seat {
         this.seatType = type;
     }
 
+
+
     public String getId() {
         return id;
     }
