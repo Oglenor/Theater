@@ -1,2 +1,2 @@
 package theater.seating;
-enum SeatType { OT, IT, MT }
+public enum SeatType { OT, IT, MT }

@@ -1,7 +1,7 @@
-package theater.seating;
+package theater;
 
-import java.util.Map;
-import java.util.function.Predicate;
+import theater.seating.Seat;
+import theater.seating.SeatType;
 
 public class TheaterSeating {
     private Seat[][] seats;
@@ -38,6 +38,10 @@ public class TheaterSeating {
 
     public void decreaseGifts() {
 
+    }
+
+    public int getAmountOfGifts() {
+        return 0;
     }
 
     @Override
