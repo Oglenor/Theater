@@ -1,8 +1,6 @@
 package theater.seating;
 
 public class Seat {
-    private int n;
-    private int m;
     private final String id;
     private boolean isOccupied;
     private boolean hasGift;
@@ -14,30 +12,31 @@ public class Seat {
         this.seatType = type;
     }
 
-    //HELLO
+//<editor-fold desc="Getters && Setters">
 
     public String getId() {
         return id;
-    }
-
-    public boolean getIsOccupied() {
-        return isOccupied;
-    }
-
-    public boolean getHasGift() {
-        return hasGift;
     }
 
     public SeatType getSeatType() {
         return seatType;
     }
 
+    public boolean getIsOccupied() {
+        return isOccupied;
+    }
+
     public void setIsOccupied(boolean occupied) {
         this.isOccupied = occupied;
+    }
+
+    public boolean getHasGift() {
+        return hasGift;
     }
 
     public void setHasGift(boolean hasGift) {
         this.hasGift = hasGift;
     }
 
+//</editor-fold>
 }
