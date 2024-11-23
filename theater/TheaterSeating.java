@@ -69,6 +69,15 @@ public class TheaterSeating {
 
     @Override
     public String toString() {
-        return super.toString();
+        StringBuilder sb = new StringBuilder();
+        String s;
+        for (Seat[] seat : seats) {
+            for (Seat value : seat){
+                s = value.getIsOccupied() ? " [B] " : " [A] ";
+                sb.append(s);
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
     }
 }
